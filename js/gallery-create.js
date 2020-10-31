@@ -93,7 +93,7 @@ function onEscKeyPress(event) {
 function onArrowLeftPress(evt) {
   const ARR_LEFT_KEY_CODE = 'ArrowLeft';
   const isArrLeftKey = evt.code === ARR_LEFT_KEY_CODE;
-  
+
   if (isArrLeftKey) {
     const sources = itemsDefault.map(({ original }) => original);
     let indexOfCurrentImg = sources.indexOf(refs.modalImage.src);
@@ -123,3 +123,4 @@ function onArrowRightPress(evt) {
     console.log(indexOfCurrentImg + 1);
   }
 }
+
